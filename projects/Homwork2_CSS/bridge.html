@@ -1,0 +1,41 @@
+<!-- This is the bridge scne -->
+<html>
+	<head>
+		<title>Interacticve Game</title>
+		<link rel="icon"  href="asset/logo.png" />
+		<link rel="stylesheet"  href="styles/styles.css">
+		<script>
+			function inputController()
+			{
+				if(inputOne.checked)
+				{
+					parent.location = 'death.html';
+				}
+				else
+				{
+					parent.location = 'riddle.html';
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+	 <h1>
+	 	The Bridge Scence
+	 </h1>
+	 <p>
+	 	This riddle uses a radio-type input. The answer is <code> option 1</code>
+	 	The clues for this riddle might have appered in precios scanes of the story.
+	 </p>
+	 <div>
+	 	<label> Choose your fate:</label>
+	 	<br>
+	 	<input type="radio" id='inputOne'name='input-name' value = 'option1'>
+	 	<label> Fight Them</label>
+	 	<br>
+	 	<input type="radio" id='InputTwo'name='input-name' value = 'option2'>
+	 	<label> Dont Fight</label>
+	 	<br>
+	 </div>
+	</body>
+</html>

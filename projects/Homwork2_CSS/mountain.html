@@ -1,0 +1,54 @@
+<!-- This is the bridge scne -->
+<html>
+	<head>
+		<title>Interacticve Game</title>
+		<link rel="icon"  href="asset/logo.png" />
+		<link rel="stylesheet"  href="styles/styles.css">
+		<style>
+			body
+			{
+				background: url('assets/backgrounds/mountain.jpg');
+				background-size: 1440px 800px;
+			}
+		</style>
+
+		<script>
+			function inputController()
+			{
+				if(inputOne.checked)
+				{
+					parent.location = 'death.html';
+				}
+				else
+				{
+					parent.location = 'riddle.html';
+				}
+			}
+		</script>
+		<audio autoplay loop>
+    		<source src="assets/audios/battle.mp3" type="audio/mpeg">
+		</audio>
+	</head>
+
+	<body>
+	 <h1>
+	 	The lonely bridge
+	 </h1>
+	 <p>
+	 	After heading toward the mountain, you have notice that you see an old bridge that lead you into the mountain side. you head toward until you hear monsterious noice coming from under the bridge. When arrive at the bridge you saw gaint Troll that was guarding the end of the bridge. What should you and your fellow companion do?
+	 </p>
+	 <div>
+	 	<label> Choose your fate:</label>
+	 	<br>
+	 	<input type="radio" id='inputOne'name='input-name' value = 'option1'>
+	 	<label> Fight Them</label>
+	 	<br>
+	 	<input type="radio" id='inputTwo'name='input-name' value = 'option2'>
+	 	<label> Dont Fight</label>
+	 	<br>
+	 	<input class="button color-button" type="button" onClick="inputController()" value = 'Submit'>
+	 </div>
+	 <img class="samuri-position" src='assets/gifs/samuri.gif' width="380">
+	 <img src="assets/gifs/m3.gif" width="400" style="position:absolute;top: 190px; right: 115px">
+	</body>
+</html>

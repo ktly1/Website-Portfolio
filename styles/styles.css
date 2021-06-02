@@ -1,0 +1,99 @@
+/*Styles*/
+.center
+{
+  text-align: center;
+}
+
+.button 
+{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.aboutMe-button 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+}
+
+.aboutMe-button:hover 
+{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.project-button 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #00008B;
+  border-radius: 12px;
+}
+
+.project-button:hover 
+{
+  background-color: #00008B;
+  color: white;
+}
+
+.blog-button 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #DEB887;
+  border-radius: 12px;
+}
+
+.blog-button:hover 
+{
+  background-color: #DEB887;
+  color: white;
+}
+
+.contact-button 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #6495ED;
+  border-radius: 12px;
+}
+
+.contact-button:hover 
+{
+  background-color: #6495ED;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

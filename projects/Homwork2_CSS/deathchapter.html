@@ -1,0 +1,60 @@
+
+<!-- This is the chapter of Death -->
+<html>
+	<head>
+		<title>Interactive Game</title>
+		<link rel="icon" href="assets/icon.png" />
+		<link rel="stylesheet"  href="styles/styles.css">
+		<style>
+			body
+			{
+				background: url('assets/backgrounds/trail.jpg');
+				background-size: 1440px 800px;
+			}
+		</style>
+
+		<script>
+			function inputController()
+			{
+				if(help.checked || wait.checked)
+				{
+					parent.location = 'reward.html';
+				}
+				else if(not.checked)
+				{
+					parent.location = 'death.html';
+				}
+			}
+		</script>
+
+		<audio autoplay loop>
+    		<source src="assets/audios/m3.mp3" type="audio/mpeg">
+		</audio>
+
+	</head>
+
+	<body>
+		<h1 class="header"> The Trail</h1>
+		<p>You and your fellow groups of adventures walked down a trailed until yall heard someone scream. You ran ahead to see what was happening! Whenver you arrive at the scene there was dark spirits that was attacking a group of merchants. Your group finally caught up with you and asked what should we do? In your mind you have two choice either you:
+		</p>
+
+		<div>
+			<label>Select:</label>
+			<br>
+			<input type="radio" id='help' name='input-name' value='option1'>
+			<label>Help the merchants that are in danger</label>
+			<br>
+			<input type="radio" id='not' name='input-name' value='option2'>
+			<label>Not help the merchant and continue throught your journey</label>
+			<br>
+			<input type="radio" id='wait' name='input-name' value='option3'>
+			<label>Wait out until the dark spirits goes away and then help the people the people</label>
+			<br>
+			<input type="button" onClick="inputController()" value='Submit'>
+		</div>
+
+		<img class="samuri-position" src='assets/gifs/samuri.gif' width="380">
+		<img src="assets/gifs/darkSpirit.gif" width="400" style="position:absolute;right: 115px">
+
+	</body>
+</html>

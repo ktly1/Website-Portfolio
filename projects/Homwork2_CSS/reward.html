@@ -1,0 +1,51 @@
+<!-- This is the informatin reward -->
+<html>
+	<head>
+		<title>Interacticve Game</title>
+		<link rel="icon"  href="asset/icon.png" />
+		<link rel="stylesheet"  href="styles/styles.css">
+		<style>
+			body
+			{
+				background: url('assets/backgrounds/path.jpg');
+				background-size: 1440px 800px;
+			}
+	
+		</style>
+
+		<script style="text-align: center;">
+			function inputController()
+			{
+				if(input1.value == 'mountain')
+				{
+					parent.location = 'mountain.html';
+				}
+				else
+				{
+					parent.location = 'lifechapter.html';
+				}
+			}
+		</script>
+		<audio autoplay loop>
+    		<source src="assets/audios/m4.mp3" type="audio/mpeg">
+		</audio>
+	</head>
+
+	<body>
+	<h1 class="header" style="color: white; text-align: left">Good News</h1>
+	<p style="color:white; text-align: left; font-size: 150%">
+		After saving the merchant, they have inform <br> you about a sercet a treasure that <br>was hidden in a mountain.
+	</p>
+		<div style="text-align:left;">
+			<label style="font-size: 200%; color: white">Select:</label>
+			<select id="input1">
+				<option selected>Choose...</option>
+				<option>mountain</option>
+				<option>forest</option>
+			</select>
+		</div>
+		
+		<input class="button color-button" type='button' onClick="inputController()" value='Submit'>
+		<img class="samuri-position" src='assets/gifs/samuri.gif' width="380">
+	</body>
+</html>
